@@ -63,7 +63,7 @@ const HeroSection = () => {
                             </div>
 
                             {/* Row 2: Role & Location/Contact (Left) | Buttons (Right) */}
-                            <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full border-t border-primary/5">
+                            <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full">
                                 <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
                                     <p className="text-primary/90 font-bold text-xl tracking-tight leading-none">{data?.role}</p>
                                     <div className="flex flex-col gap-2.5">
