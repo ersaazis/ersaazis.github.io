@@ -1,25 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
+import data from "../../../../../data.json";
 
 const Achievements = () => {
-    const [achievements, setAchievements] = useState<any[]>([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data = await res.json()
-                setAchievements(data?.achievements || [])
-            } catch (error) {
-                console.error('Error fetching achievements:', error)
-            }
-        }
-
-        fetchData()
-    }, [])
-
-    if (achievements.length === 0) return null;
+    const achievements = data.achievements || [];
 
     return (
         <section>

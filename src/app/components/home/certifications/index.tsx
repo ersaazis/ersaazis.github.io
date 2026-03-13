@@ -1,25 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
+import data from "../../../../../data.json";
 
 const Certifications = () => {
-    const [certData, setCertData] = useState<any[]>([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data = await res.json()
-                setCertData(data?.certifications || [])
-            } catch (error) {
-                console.error('Error fetching certifications:', error)
-            }
-        }
-
-        fetchData()
-    }, [])
-
-    if (certData.length === 0) return null;
+    const certData = data.certifications || [];
 
     return (
         <section>
