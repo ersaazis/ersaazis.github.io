@@ -5,23 +5,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github } from "lucide-react";
 
+import profileData from "../../../../../data.json";
+
 const HeroSection = () => {
-    const [profileData, setProfileData] = useState<any>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data = await res.json()
-                setProfileData(data?.profile)
-            } catch (error) {
-                console.error('Error fetching profile data:', error)
-            }
-        }
-
-        fetchData()
-    }, [])
+    const data = profileData.profile;
 
     const socialIcon = [
         {
@@ -36,7 +23,7 @@ const HeroSection = () => {
         },
     ];
 
-    if (!profileData) return <div className="h-96 flex items-center justify-center">Loading...</div>;
+    if (!data) return <div className="h-96 flex items-center justify-center">Loading...</div>;
 
     return (
         <section>
@@ -44,7 +31,7 @@ const HeroSection = () => {
                 <div className="">
                     <div className="w-full h-72 relative">
                         <Image
-                            src={profileData?.cover || "/images/hero-sec/banner-bg-img.png"}
+                            src={data?.cover || "/images/hero-sec/banner-bg-img.png"}
                             alt="banner-img"
                             width={1080}
                             height={267}
@@ -56,7 +43,7 @@ const HeroSection = () => {
                         <div className="relative flex flex-col max-w-3xl mx-auto px-4 sm:px-7 pt-24 pb-8 sm:pb-12 gap-8">
                             <div className="absolute top-0 transform -translate-y-1/2 left-4 sm:left-7">
                                 <Image
-                                    src={profileData?.photo || "/images/hero-sec/user-img.png"}
+                                    src={data?.photo || "/images/hero-sec/user-img.png"}
                                     alt="user-img"
                                     width={145}
                                     height={145}
@@ -69,30 +56,30 @@ const HeroSection = () => {
                             {/* Row 1: Name */}
                             <div className="w-full text-center xs:text-left">
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary leading-tight tracking-tight">
-                                    {profileData?.name}
+                                    {data?.name}
                                 </h1>
                             </div>
 
                             {/* Row 2: Role & Location/Contact (Left) | Buttons (Right) */}
                             <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full border-t border-primary/5">
                                 <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
-                                    <p className="text-primary/90 font-bold text-xl tracking-tight leading-none">{profileData?.role}</p>
+                                    <p className="text-primary/90 font-bold text-xl tracking-tight leading-none">{data?.role}</p>
                                     <div className="flex flex-col gap-2.5">
                                         <div className="flex items-center gap-2 text-secondary/70">
                                             <Image src={"/images/icon/map-icon.svg"} alt="map-icon" width={16} height={16} className="opacity-60" />
-                                            <p className="font-medium text-xs tracking-wide">{profileData?.location}</p>
+                                            <p className="font-medium text-xs tracking-wide">{data?.location}</p>
                                         </div>
                                         <div className="flex items-center gap-2 text-secondary/70">
                                             <div className="w-4 flex justify-center">
                                                 <span className="text-xs text-secondary/50">@</span>
                                             </div>
-                                            <p className="font-medium text-xs tracking-wide">{profileData?.email}</p>
+                                            <p className="font-medium text-xs tracking-wide">{data?.email}</p>
                                         </div>
                                         <div className="flex items-center gap-2 text-secondary/70">
                                             <div className="w-4 flex justify-center">
                                                 <span className="text-xs text-secondary/50">#</span>
                                             </div>
-                                            <p className="font-medium text-xs tracking-wide">{profileData?.phone}</p>
+                                            <p className="font-medium text-xs tracking-wide">{data?.phone}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -109,10 +96,10 @@ const HeroSection = () => {
                                         })}
                                     </div>
                                     <div className="flex gap-3">
-                                        {profileData?.resume && (
+                                        {data?.resume && (
                                             <Button asChild className="h-11 rounded-full p-0.5 shadow-lg group">
                                                 <a
-                                                    href={profileData.resume}
+                                                    href={data.resume}
                                                     download
                                                     className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#2D2D2D_12.17%,_#F3CA4D_90.71%)] h-full"
                                                 >

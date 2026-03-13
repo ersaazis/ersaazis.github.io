@@ -1,28 +1,7 @@
-"use client";
-import Image from "next/image"
-import Link from "next/link"
-import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import data from "../../../../../data.json";
 
 const FeaturedWork = () => {
-    const [pageData, setPageData] = useState<any>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data = await res.json()
-                setPageData(data)
-            } catch (error) {
-                console.error('Error fetching featured work data:', error)
-            }
-        }
-
-        fetchData()
-    }, [])
-
-    const featuredWork = pageData?.featuredWork || [];
+    const featuredWork = data?.featuredWork || [];
 
     return (
         <section>

@@ -1,31 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import {
-    Dialog,
-    DialogContent,
-    DialogTrigger,
-    DialogTitle,
-    DialogDescription,
-} from "@/components/ui/dialog";
+import data from "../../../../../data.json";
 
 const Gallery = () => {
-    const [galleryData, setGalleryData] = useState<any[]>([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                const data = await res.json()
-                setGalleryData(data.gallery || [])
-            } catch (error) {
-                console.error('Error fetching gallery data:', error)
-            }
-        }
-        fetchData()
-    }, [])
-
-    if (!galleryData || galleryData.length === 0) return null;
+    const galleryData = data.gallery || [];
 
     return (
         <section>

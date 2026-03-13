@@ -1,24 +1,6 @@
-"use client";
-import { useEffect, useState } from "react";
-import { Badge } from "@/components/ui/badge";
+import pageData from "../../../../../data.json";
 
 const AboutMe = () => {
-    const [pageData, setPageData] = useState<any>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                const data = await res.json()
-                setPageData(data)
-            } catch (error) {
-                console.error('Error fetching data:', error)
-            }
-        }
-        fetchData()
-    }, [])
-
-    if (!pageData) return null;
 
     return (
         <section>
