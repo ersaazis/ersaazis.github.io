@@ -1,24 +1,27 @@
-"use client"
+"use client";
 
 import Image from "next/image"
-import Link from "next/link"
 import { useState } from "react"
 import data from "../../../../../data.json";
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ExternalLink } from "lucide-react"
+
+type FeaturedWorkItem = {
+    title: string;
+    description: string;
+    roles: string[];
+    image: string;
+    url?: string;
+    details?: string;
+};
+
+const RoleBadge = ({ role }: { role: string }) => (
+    <span className="text-[9px] font-semibold px-2 py-0.5 border border-primary/5 rounded bg-primary/5 text-primary/70">
+        {role}
+    </span>
+);
 
 const FeaturedWork = () => {
-    const featuredWork = data?.featuredWork || [];
-    const [selectedProject, setSelectedProject] = useState<any>(null);
+    const featuredWork: FeaturedWorkItem[] = data?.featuredWork || [];
+    const [selected, setSelected] = useState<FeaturedWorkItem | null>(null);
 
     return (
         <section>
@@ -30,94 +33,109 @@ const FeaturedWork = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-primary/10">
-                        {featuredWork.map((value: any, index: number) => {
-                            return (
-                                <Dialog key={index}>
-                                    <DialogTrigger asChild>
-                                        <div
-                                            className="group flex flex-col gap-4 p-5 border-b lg:border-b-0 border-primary/10 sm:border-r sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0 last:border-b-0 last:border-r-0 cursor-pointer"
-                                            onClick={() => setSelectedProject(value)}
-                                        >
-                                            <div className="overflow-hidden rounded-lg">
-                                                <Image
-                                                    src={value?.image || "/images/hero-sec/banner-bg-img.png"}
-                                                    alt={value.title}
-                                                    width={400}
-                                                    height={250}
-                                                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
-                                                />
-                                            </div>
-                                            <div className="flex flex-col gap-2">
-                                                <h4 className="text-base font-bold line-clamp-1 group-hover:text-violet-600 transition-colors">{value?.title}</h4>
-                                                <p className="text-xs text-secondary line-clamp-2 leading-relaxed">{value?.description}</p>
-                                                <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
-                                                    {value?.roles?.slice(0, 2).map((role: string, roleIndex: number) => (
-                                                        <span key={roleIndex} className="text-[9px] font-semibold px-2 py-0.5 border border-primary/5 rounded bg-primary/5 text-primary/70">
-                                                            {role}
-                                                        </span>
-                                                    ))}
-                                                    {value?.roles?.length > 2 && (
-                                                        <span className="text-[9px] font-semibold px-2 py-0.5 border border-primary/5 rounded bg-primary/5 text-primary/70">
-                                                            +{value.roles.length - 2}
-                                                        </span>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </DialogTrigger>
-                                    <DialogContent className="sm:max-w-[600px] gap-6 max-h-[90vh] overflow-y-auto">
-                                        <DialogHeader>
-                                            <DialogTitle className="text-2xl font-bold">{value?.title}</DialogTitle>
-                                        </DialogHeader>
-                                        <div className="flex flex-col gap-6">
-                                            <div className="overflow-hidden rounded-xl border border-primary/10">
-                                                <Image
-                                                    src={value?.image || "/images/hero-sec/banner-bg-img.png"}
-                                                    alt={value.title}
-                                                    width={800}
-                                                    height={450}
-                                                    className="w-full max-h-[320px] object-cover"
-                                                />
-                                            </div>
-                                            
-                                            <div className="flex flex-col gap-4">
-                                                <div className="flex flex-col gap-2">
-                                                    <h5 className="text-sm font-bold uppercase tracking-wider text-primary/50">Description</h5>
-                                                    <p className="text-sm text-secondary leading-relaxed">
-                                                        {value?.description}
-                                                    </p>
-                                                </div>
-
-                                                <div className="flex flex-col gap-2">
-                                                    <h5 className="text-sm font-bold uppercase tracking-wider text-primary/50">Roles & Contributions</h5>
-                                                    <div className="flex flex-wrap gap-2">
-                                                        {value?.roles?.map((role: string, roleIndex: number) => (
-                                                            <Badge key={roleIndex} variant="secondary" className="px-3 py-1 text-xs font-medium">
-                                                                {role}
-                                                            </Badge>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="flex justify-end pt-4 border-t border-primary/10">
-                                                <Button asChild className="gap-2">
-                                                    <Link href={value.url || "/"} target="_blank" rel="noopener noreferrer">
-                                                        Visit Project <ExternalLink size={16} />
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </DialogContent>
-                                </Dialog>
-                            );
-                        })}
+                        {featuredWork.map((value, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setSelected(value)}
+                                className="group text-left flex flex-col gap-4 p-5 border-b lg:border-b-0 border-primary/10 sm:border-r sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0 last:border-b-0 last:border-r-0 hover:bg-primary/[0.02] transition-colors"
+                            >
+                                <div className="overflow-hidden rounded-lg">
+                                    <Image
+                                        src={value?.image || "/images/hero-sec/banner-bg-img.png"}
+                                        alt={value.title}
+                                        width={400}
+                                        height={250}
+                                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
+                                    />
+                                </div>
+                                <div className="flex flex-col gap-2">
+                                    <h4 className="text-base font-bold line-clamp-1">{value?.title}</h4>
+                                    <p className="text-xs text-secondary line-clamp-2 leading-relaxed">{value?.description}</p>
+                                    <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
+                                        {value?.roles?.map((role, roleIndex) => (
+                                            <RoleBadge key={roleIndex} role={role} />
+                                        ))}
+                                    </div>
+                                </div>
+                            </button>
+                        ))}
                     </div>
-
                 </div>
             </div>
+
+            {/* Modal */}
+            {selected && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
+                    onClick={() => setSelected(null)}
+                >
+                    <div
+                        className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {/* Close button */}
+                        <button
+                            onClick={() => setSelected(null)}
+                            className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-primary/5 hover:bg-primary/10 transition-colors text-primary/60 hover:text-primary"
+                            aria-label="Close"
+                        >
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                            </svg>
+                        </button>
+
+                        {/* Image */}
+                        <div className="overflow-hidden rounded-t-2xl">
+                            <Image
+                                src={selected.image || "/images/hero-sec/banner-bg-img.png"}
+                                alt={selected.title}
+                                width={800}
+                                height={450}
+                                className="w-full object-cover max-h-72"
+                            />
+                        </div>
+
+                        {/* Content */}
+                        <div className="p-6 sm:p-8 flex flex-col gap-5">
+                            <div className="flex flex-col gap-3">
+                                <h3 className="text-xl sm:text-2xl font-bold leading-snug">{selected.title}</h3>
+                                <p className="text-sm text-secondary leading-relaxed">{selected.description}</p>
+                            </div>
+
+                            {selected.roles?.length > 0 && (
+                                <div className="flex flex-col gap-2">
+                                    <p className="text-xs tracking-widest text-primary/50 uppercase font-bold">Roles</p>
+                                    <div className="flex flex-wrap gap-1.5">
+                                        {selected.roles.map((role, i) => (
+                                            <RoleBadge key={i} role={role} />
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            {selected.details && (
+                                <p className="text-sm text-secondary leading-relaxed">{selected.details}</p>
+                            )}
+
+                            {selected.url && (
+                                <a
+                                    href={selected.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="self-end inline-flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                                >
+                                    View Project
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     )
 }
 
-export default FeaturedWork
+export default FeaturedWork
