@@ -6,7 +6,7 @@
     "email": "eam24maret@gmail.com",
     "phone": "+62 896 5621 7609",
     "location": "Jakarta, Indonesia",
-    "intro": "Hey there. I'm Ersa - Senior DevSecOps Engineer based in Jakarta.",
+    "intro": "Hey there. I'm Ersa",
     "linkedin": "https://linkedin.com/in/ersaazis",
     "github": "https://github.com/ersaazis",
     "photo": "/profile.jpg",
@@ -15,72 +15,140 @@
   },
   "skills": [
     "Kubernetes",
-    "Docker",
-    "Terraform",
-    "Prometheus",
-    "Ansible",
-    "CI/CD",
-    "Cloud Platforms",
-    "Security Scan"
+    "Containers",
+    "Cloud Platforms ",
+    "Infrastructure as Code",
+    "CI/CD Pipelines",
+    "Git & GitOps",
+    "Linux/Unix Administration",
+    "Scripting",
+    "Networking ",
+    "Monitoring & Observability",
+    "Logging & Tracing",
+    "Security Scanning",
+    "Code Quality Scanning"
   ],
   "languages": [
     "Indonesian (Native)",
-    "English (Professional Working Proficiency)"
+    "English (Professional Working)"
   ],
   "tools": [
-    "Visual Studio Code",
-    "Lens (Kubernetes IDE)",
-    "Postman",
-    "DBeaver",
-    "Jirra / Confluence",
-    "Slack",
-    "Wireshark"
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Ansible",
+    "Prometheus",
+    "Loki",
+    "Tempo",
+    "Mimir",
+    "Alloy",
+    "Grafana",
+    "GitHub Actions",
+    "GitLab CI",
+    "Jenkins",
+    "Argo CD",
+    "Helm",
+    "SonarQube",
+    "Snyk",
+    "Vault",
+    "n8n",
+    "PHP",
+    "Python",
+    "Go",
+    "MySQL",
+    "PostgreSQL",
+    "Elasticsearch",
+    "MongoDB",
+    "KDB+",
+    "Bash",
+    "Nginx",
+    "Debian",
+    "Ubuntu",
+    "Proxmox",
+    "Redis",
+    "RabbitMQ",
+    "OpenTelemetry"
   ],
   "experience": [
     {
-      "role": "Senior DevSecOps Engineer",
-      "company": "Bitwyre",
-      "location": "Remote",
-      "startYear": "2025",
+      "role": "Planned Career Break",
+      "company": "",
+      "location": "",
+      "startYear": "August 2025",
       "endYear": "Present",
+      "bulletPoints": []
+    },
+    {
+      "role": "Senior DevSecOps Engineer",
+      "company": "Bitwyre Systematic Trading FZCO",
+      "location": "Hybrid Jakarta",
+      "startYear": "March 2025",
+      "endYear": "August 2025",
       "bulletPoints": [
-        "Overseeing secure infrastructure and automated pipelines.",
-        "Architecting highly scalable cloud ecosystems."
+        "Automated CI/CD pipelines, reducing release time to under 2 minutes and significantly increasing deployment frequency and overall development efficiency.",
+        "Orchestrated the zero-downtime migration of 20+ services to a new cloud provider using Terraform and Ansible, standardizing infrastructure and dramatically accelerating setup time.",
+        "Managed and maintained Kubernetes clusters for application deployment, scaling, and high availability, ensuring consistent system reliability.",
+        "Optimized AWS infrastructure, including provisioning, monitoring, and cloud resource management to ensure stability and performance.",
+        "Implemented the LGTM stack (Loki, Grafana, Tempo, Mimir) for integrated observability, reducing investigation time from hours to minutes through centralized logging and distributed tracing."
       ]
     },
     {
       "role": "DevSecOps Engineer",
-      "company": "CHRONICLE PTY LTD",
-      "location": "Australia/US",
-      "startYear": "2023",
-      "endYear": "2025",
+      "company": "Chronicle PTY LTD",
+      "location": "Bali, Indonesia",
+      "startYear": "November 2023",
+      "endYear": "March 2025",
       "bulletPoints": [
-        "Integrated automated Code Quality (SonarQube) and Security Scanning (Snyk).",
-        "Built multi-country cloud infrastructure.",
-        "Orchestrated zero-downtime migration of 20+ services."
+        "Integrated automated Code Quality (SonarQube) and Security Scanning (Snyk) into the CI/CD pipelines within the SDLC to ensure security best practices.",
+        "Built multi-country cloud infrastructure in Australia and the US to ensure compliance with local regulations.",
+        "Leveraged GitHub Actions for seamless and automated deployments, improving cloud environment stability and performance.",
+        "Configured and maintained Docker Swarm, Nginx, and observability tools (Loki, Prometheus) to support reliable application operations.",
+        "Managed AI development environments, including Label Studio and notebook servers, to support AI engineering collaboration."
       ]
     },
     {
       "role": "Lead DevOps Engineer",
       "company": "PT Indoglobal Nusa Persada",
-      "location": "Indonesia",
-      "startYear": "2022",
-      "endYear": "2023",
+      "location": "Jakarta, Indonesia",
+      "startYear": "October 2022",
+      "endYear": "November 2023",
       "bulletPoints": [
-        "Led migration from monolithic to microservices architecture.",
-        "Established CI/CD workflows using GitLabCI and Forge.",
-        "Deployed Kubernetes and Prometheus/Loki stack."
+        "Led the migration from monolithic to microservices architecture, enabling the system to scale and handle thousands of concurrent users, directly contributing to increased company revenue.",
+        "Established CI/CD workflows using GitLabCI and Forge, significantly reducing manual deployment overhead.",
+        "Monitored and maintained a hybrid environment of cloud and on-premise servers.",
+        "Deployed various applications including Kubernetes, Proxmox, and the Prometheus/Loki stack to ensure smooth operational flow."
+      ]
+    },
+    {
+      "role": "DevOps Engineer",
+      "company": "PT Indoglobal Nusa Persada",
+      "location": "Jakarta, Indonesia",
+      "startYear": "October 2021",
+      "endYear": "October 2022",
+      "bulletPoints": [
+        "Managed CI/CD pipelines via GitLabCI and maintained server health across cloud and on-premise infrastructure.",
+        "Configured core infrastructure tools including Kubernetes, Nginx, and monitoring systems."
+      ]
+    },
+    {
+      "role": "Web Developer & IT Operations Engineer",
+      "company": "Ministry of Religious Affairs of Indonesia",
+      "location": "Jakarta, Indonesia",
+      "startYear": "2021",
+      "endYear": "2021",
+      "bulletPoints": [
+        "Designed and developed a scalable web application and database schema to streamline the fund disbursement process for the 'Program Indonesia Pintar,' ensuring data integrity for thousands of recipients.",
+        "Coordinated with cross-functional development teams to ensure project milestones were met according to technical specifications and government regulations.",
+        "Collaborated with DevOps engineers to design and implement initial CI/CD pipelines and cloud infrastructure, reducing manual deployment efforts."
       ]
     }
   ],
   "education": [
     {
-      "date": "2019 - 2023",
       "title": "Informatics Engineering",
       "subtitle": "UIN Sunan Gunung Djati — Bandung"
     },
     {
-      "date": "2016 - 2019",
       "title": "Computer & Network Engineering",
       "subtitle": "Medikacom — Bandung"
     }
