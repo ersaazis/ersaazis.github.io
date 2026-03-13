@@ -34,24 +34,26 @@ const Gallery = () => {
                                             </div>
                                         </div>
                                     </DialogTrigger>
-                                    <DialogContent className="max-w-[95vw] sm:max-w-screen-2xl h-[90vh] p-0 bg-white border border-primary/10 shadow-2xl flex items-center justify-center overflow-hidden rounded-3xl">
+                                    <DialogContent className="max-w-[95vw] xl:max-w-screen-xl h-[85vh] p-4 sm:p-8 bg-white border border-primary/10 shadow-2xl flex items-center justify-center overflow-hidden rounded-3xl">
                                         <DialogTitle className="sr-only">{item.title}</DialogTitle>
                                         <DialogDescription className="sr-only">Fullscreen view of {item.title}</DialogDescription>
 
-                                        <div className="relative w-full h-full flex flex-col items-center justify-center p-4 sm:p-10">
-                                            <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg border border-primary/5">
+                                        <div className="relative w-full h-full flex flex-col items-center justify-center">
+                                            <div className="relative w-full h-full rounded-2xl overflow-hidden">
                                                 <Image
                                                     src={item.image}
                                                     alt={item.title}
                                                     fill
                                                     className="object-contain"
                                                     priority
+                                                    unoptimized
                                                 />
                                             </div>
-                                            {/* Description Overlay - Adjusted for White Theme */}
-                                            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[90%] sm:w-auto px-10 py-5 rounded-2xl bg-white/90 backdrop-blur-md border border-primary/10 text-center shadow-xl animate-in fade-in slide-in-from-bottom-6 duration-700">
+                                            
+                                            {/* Header/Description Overlay inside white box */}
+                                            <div className="mt-6 text-center">
                                                 <h4 className="text-primary text-xl font-bold tracking-tight">{item.title}</h4>
-                                                <p className="text-secondary/70 text-sm mt-1.5 font-medium uppercase tracking-[2px]">Project Visual Showcase</p>
+                                                <p className="text-secondary/60 text-[10px] font-black uppercase tracking-[0.3em] mt-1">Project Visual Showcase</p>
                                             </div>
                                         </div>
                                     </DialogContent>
