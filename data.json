@@ -155,146 +155,170 @@
   ],
   "featuredWork": [
     {
-      "title": "Cloud Infrastructure Automation",
-      "description": "Enterprise-grade Kubernetes cluster management using Terraform and Ansible.",
+      "title": "Livit AGI Hackathon 2024",
+      "description": "Achieved 2nd place in the LIVIT AI Hackathon by architecting a secure and scalable cloud infrastructure to handle high-performance AI workloads. Focused on implementing robust security protocols and efficient resource orchestration to ensure reliable application hosting and seamless model deployment.",
       "roles": [
-        "DevSecOps",
-        "Cloud Architect"
+        "Infrastructure Architect",
+        "DevSecOps Engineer",
+        "AI Pipeline Orchestrator"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.linkedin.com/posts/ersaazis_i-am-truly-honored-to-receive-a-certificate-activity-7247988071319666689-ju-x?utm_source=share&utm_medium=member_desktop&rcm=ACoAACntRm4BRdvItt7s2ibWicelSIRn6cxS7SA",
+      "image": "images/work/featured-agi-hackathon.png"
+    },
+    {
+      "title": "National Data Science Tournament 2023",
+      "description": "Secured 3rd place by engineering a comprehensive data infrastructure utilizing Kubernetes, Docker, Airflow, Spark, and Kafka. Integrated cloud services with BigQuery and Looker Studio to build an end-to-end data processing and visualization pipeline, enabling real-time analytics and informative dashboards.",
+      "roles": [
+        "Data Engineer",
+        "Kubernetes Specialist",
+        "Pipeline Architect"
+      ],
+      "url": "https://www.linkedin.com/posts/ersaazis_i-am-proud-to-have-achieved-third-place-in-activity-7247983951913332738-5VQ-?utm_source=share&utm_medium=member_desktop&rcm=ACoAACntRm4BRdvItt7s2ibWicelSIRn6cxS7SA",
+      "image": "images/work/featured-data-science.png"
     },
     {
       "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "description": "Designed and deployed a full-stack monitoring and observability solution utilizing the LGTM stack (Loki, Grafana, Tempo, Mimir) and Alloy. Successfully reduced incident investigation time from hours to minutes by centralizing logs, metrics, and distributed tracing across hybrid cloud environments.",
       "roles": [
-        "SRE",
-        "Observability Engineer"
+        "Observability Specialist",
+        "Monitoring Engineer"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.youtube.com/watch?v=xqJurrQKNdE",
+      "image": "images/work/featured-observability.png"
     },
     {
-      "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "title": "Ansible Semaphore Deployment",
+      "description": "Implemented Ansible Semaphore for centralized automation management, enabling versioned and collaborative infrastructure-as-code execution. Streamlined configuration management and deployment workflows across diverse server environments.",
       "roles": [
-        "SRE",
-        "Observability Engineer"
+        "Automation Engineer",
+        "IaC Specialist"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.youtube.com/watch?v=xqJurrQKNdE",
+      "image": "images/work/featured-ansible.png"
     },
     {
-      "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "title": "Terraform Infrastructure as Code",
+      "description": "Architected modular and reusable infrastructure blueprints using Terraform to automate cloud resource provisioning. Ensured consistent and reproducible environments across AWS and on-premise infrastructure, reducing manual configuration errors.",
       "roles": [
-        "SRE",
-        "Observability Engineer"
+        "IaC Architect",
+        "Cloud Engineer"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.youtube.com/watch?v=xqJurrQKNdE",
+      "image": "images/work/featured-terraform.png"
     },
     {
-      "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "title": "Kubernetes Cluster Management",
+      "description": "Orchestrated highly available Kubernetes clusters for production workloads, implementing advanced networking, persistent storage, and auto-scaling. Focused on cluster security, performance tuning, and zero-downtime deployment strategies.",
       "roles": [
-        "SRE",
-        "Observability Engineer"
+        "K8s Administrator",
+        "Platform Engineer"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.youtube.com/watch?v=xqJurrQKNdE",
+      "image": "images/work/featured-kubernetes.png"
     },
     {
-      "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "title": "AI Agent Observability",
+      "description": "Engineered advanced observability for autonomous AI agents, tracking model performance, decision-making logs, and resource consumption. Integrated specialized monitoring tools to provide deep visibility into agentic workflows and AI system health.",
       "roles": [
-        "SRE",
-        "Observability Engineer"
+        "AI Platform Engineer",
+        "Observability Architect"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.youtube.com/watch?v=xqJurrQKNdE",
+      "image": "images/work/featured-ai-agent.png"
     },
     {
-      "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "title": "DApps ICP Network BlockSign",
+      "description": "Developed BlockSign, a decentralized application (dApp) on the Internet Computer Protocol (ICP). Enabled secure, on-chain digital signatures for PDF documents using ICP identity, ensuring verifiable and tamper-proof exchanges through blockchain technology and smart contract integration.",
       "roles": [
-        "SRE",
-        "Observability Engineer"
+        "Blockchain Developer",
+        "dApp Architect"
       ],
-      "image": "/images/hero-sec/banner-bg-img.png"
-    },
-    {
-      "title": "Observability Stack Implementation",
-      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
-      "roles": [
-        "SRE",
-        "Observability Engineer"
-      ],
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "url": "https://www.youtube.com/watch?v=orHOVMXueoE",
+      "image": "images/work/featured-blocksign.png"
     }
   ],
   "gallery": [
     {
-      "title": "Kubernetes Architecture",
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "title": "CNSS Certified Network Security Specialist",
+      "image": "images/gallery/cnss-certificate.png"
     },
     {
-      "title": "Monitoring Dashboard",
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "title": "Cyber Security Awareness Certificate",
+      "image": "images/gallery/cyber-security-awareness.png"
     },
     {
-      "title": "CI/CD Pipeline Flow",
-      "image": "/images/hero-sec/banner-bg-img.png"
+      "title": "Server Administration Competency Certification",
+      "image": "images/gallery/server-admin-competency.png"
+    },
+    {
+      "title": "AGI Hackathon 2024",
+      "image": "images/gallery/agi-hackathon-2024.png"
+    },
+    {
+      "title": "AGI Hackathon 2024 Team",
+      "image": "images/gallery/agi-hackathon-2024-team.png"
+    },
+    {
+      "title": "ICP Hackathon 2024",
+      "image": "images/gallery/icp-hackathon-2024.png"
+    },
+    {
+      "title": "National Data Science Tournament 2023",
+      "image": "images/gallery/data-science-tournament-2023.png"
+    },
+    {
+      "title": "National Data Science Tournament 2023 Team",
+      "image": "images/gallery/data-science-tournament-2023-team.png"
+    },
+    {
+      "title": "With the Bitwyre Engineering Team",
+      "image": "images/gallery/bitwyre-engineering-team.png"
+    },
+    {
+      "title": "With the Chronicle Team",
+      "image": "images/gallery/chronicle-team.png"
+    },
+    {
+      "title": "With the Chronicle Engineering Team",
+      "image": "images/gallery/chronicle-engineering-team.png"
+    },
+    {
+      "title": "PT Indoglobal Nusa Persada (Pintro) Podcast",
+      "image": "images/gallery/pintro-podcast.png"
     }
   ],
-  "projectOverview": {
-    "caseStudies": [
-      {
-        "name": "Secure CI/CD Pipeline",
-        "url": "#"
-      },
-      {
-        "name": "Zero Trust Network Architecture",
-        "url": "#"
-      }
-    ],
-    "sideProjects": [
-      {
-        "name": "K8s Operator for Automating Backups",
-        "url": "#"
-      },
-      {
-        "name": "Terraform Module Registry",
-        "comingSoon": true
-      }
-    ]
-  },
   "certifications": [
     {
       "name": "CNSS Certified Network Security Specialist",
-      "issuer": "ICSI",
-      "date": "2024"
+      "issuer": "International Cyber Security Institute (ICSI)",
+      "date": "2020"
     },
     {
       "name": "Cyber Security Awareness Certificate",
-      "issuer": "Fortinet",
-      "date": "2024"
+      "issuer": "Cyber Army Indonesia",
+      "date": "2018"
     },
     {
-      "name": "Server Administration Competency",
-      "issuer": "BNSP",
-      "date": "2023"
+      "name": "Server Administration Competency Certification",
+      "issuer": "PT Comtronics Systems",
+      "date": "2016"
     }
   ],
   "achievements": [
     {
       "title": "AGI Hackathon 2024",
       "result": "2nd Runner Up",
-      "desc": "Led AI pipeline orchestration and security implementation."
+      "desc": "Led AI pipeline orchestration and security implementation for seamless model integration."
     },
     {
       "title": "ICP Hackathon 2024",
       "result": "Participant",
-      "desc": "Developed DApps and researched Web3 deployment strategies."
+      "desc": "Developed DApps (Decentralized Applications) and researched Web3 deployment strategies on the Internet Computer Protocol"
     },
     {
-      "title": "Data Science Tournament",
+      "title": "National Data Science Tournament 2023",
       "result": "3rd Place",
-      "desc": "Engineered robust data pipelines and security protocols."
+      "desc": "Engineered robust data pipelines and enforced security protocols for large-scale datasets."
     }
   ]
 }

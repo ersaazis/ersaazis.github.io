@@ -37,6 +37,7 @@ const HeroSection = () => {
                             height={267}
                             className="w-full h-full object-cover"
                             unoptimized
+                            priority
                         />
                     </div>
                     <div className="border-x border-primary/10">
@@ -49,6 +50,7 @@ const HeroSection = () => {
                                     height={145}
                                     className="border-4 border-white rounded-full aspect-square object-cover shadow-md"
                                     unoptimized
+                                    priority
                                 />
                                 <span className="absolute bottom-2.5 right-5 w-4 h-4 bg-green-500 border-2 border-white rounded-full" />
                             </div>

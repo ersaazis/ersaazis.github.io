@@ -45,15 +45,13 @@ const Gallery = () => {
                                                     alt={item.title}
                                                     fill
                                                     className="object-contain"
-                                                    priority
                                                     unoptimized
                                                 />
                                             </div>
-                                            
+
                                             {/* Header/Description Overlay inside white box */}
                                             <div className="mt-6 text-center">
                                                 <h4 className="text-primary text-xl font-bold tracking-tight">{item.title}</h4>
-                                                <p className="text-secondary/60 text-[10px] font-black uppercase tracking-[0.3em] mt-1">Project Visual Showcase</p>
                                             </div>
                                         </div>
                                     </DialogContent>
