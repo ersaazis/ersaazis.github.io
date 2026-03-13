@@ -1,0 +1,232 @@
+{
+  "profile": {
+    "name": "Ersa Azis Mansyur",
+    "role": "Senior DevSecOps Engineer",
+    "summary": "Senior DevSecOps Engineer with extensive experience in architecting highly scalable and secure cloud infrastructures for general software hosting and highgrowth environments. Driven by high learning agility and a passion for emerging technologies, I have a proven track record of rapidly mastering and securing diverse platforms, from traditional web applications to AI and Web3 (ICP) ecosystems. Expert in accelerating deployment speed through automated CI/CD and AI/Data pipeline orchestration, while enforcing rigorous security protocols. Advanced proficiency in Kubernetes and the LGTM observability stack to enhance system reliability and minimize incident resolution time from hours to minutes. Focused on continuous innovation, automation, and maintaining high availability for large-scale, complex applications",
+    "email": "eam24maret@gmail.com",
+    "phone": "+62 896 5621 7609",
+    "location": "Jakarta, Indonesia",
+    "intro": "Hey there. I'm Ersa - Senior DevSecOps Engineer based in Jakarta.",
+    "linkedin": "https://linkedin.com/in/ersaazis",
+    "github": "https://github.com/ersaazis",
+    "photo": "/profile.jpg",
+    "cover": "/backgroud.png",
+    "resume": "/Ersa_Azis Mansyur_Resume_2026.pdf"
+  },
+  "skills": [
+    "Kubernetes",
+    "Docker",
+    "Terraform",
+    "Prometheus",
+    "Ansible",
+    "CI/CD",
+    "Cloud Platforms",
+    "Security Scan"
+  ],
+  "languages": [
+    "Indonesian (Native)",
+    "English (Professional Working Proficiency)"
+  ],
+  "tools": [
+    "Visual Studio Code",
+    "Lens (Kubernetes IDE)",
+    "Postman",
+    "DBeaver",
+    "Jirra / Confluence",
+    "Slack",
+    "Wireshark"
+  ],
+  "experience": [
+    {
+      "role": "Senior DevSecOps Engineer",
+      "company": "Bitwyre",
+      "location": "Remote",
+      "startYear": "2025",
+      "endYear": "Present",
+      "bulletPoints": [
+        "Overseeing secure infrastructure and automated pipelines.",
+        "Architecting highly scalable cloud ecosystems."
+      ]
+    },
+    {
+      "role": "DevSecOps Engineer",
+      "company": "CHRONICLE PTY LTD",
+      "location": "Australia/US",
+      "startYear": "2023",
+      "endYear": "2025",
+      "bulletPoints": [
+        "Integrated automated Code Quality (SonarQube) and Security Scanning (Snyk).",
+        "Built multi-country cloud infrastructure.",
+        "Orchestrated zero-downtime migration of 20+ services."
+      ]
+    },
+    {
+      "role": "Lead DevOps Engineer",
+      "company": "PT Indoglobal Nusa Persada",
+      "location": "Indonesia",
+      "startYear": "2022",
+      "endYear": "2023",
+      "bulletPoints": [
+        "Led migration from monolithic to microservices architecture.",
+        "Established CI/CD workflows using GitLabCI and Forge.",
+        "Deployed Kubernetes and Prometheus/Loki stack."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "2019 - 2023",
+      "title": "Informatics Engineering",
+      "subtitle": "UIN Sunan Gunung Djati — Bandung"
+    },
+    {
+      "date": "2016 - 2019",
+      "title": "Computer & Network Engineering",
+      "subtitle": "Medikacom — Bandung"
+    }
+  ],
+  "featuredWork": [
+    {
+      "title": "Cloud Infrastructure Automation",
+      "description": "Enterprise-grade Kubernetes cluster management using Terraform and Ansible.",
+      "roles": [
+        "DevSecOps",
+        "Cloud Architect"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Observability Stack Implementation",
+      "description": "Full-stack monitoring solution using Grafana, Prometheus, Loki, and Tempo.",
+      "roles": [
+        "SRE",
+        "Observability Engineer"
+      ],
+      "image": "/images/hero-sec/banner-bg-img.png"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Kubernetes Architecture",
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "Monitoring Dashboard",
+      "image": "/images/hero-sec/banner-bg-img.png"
+    },
+    {
+      "title": "CI/CD Pipeline Flow",
+      "image": "/images/hero-sec/banner-bg-img.png"
+    }
+  ],
+  "projectOverview": {
+    "caseStudies": [
+      {
+        "name": "Secure CI/CD Pipeline",
+        "url": "#"
+      },
+      {
+        "name": "Zero Trust Network Architecture",
+        "url": "#"
+      }
+    ],
+    "sideProjects": [
+      {
+        "name": "K8s Operator for Automating Backups",
+        "url": "#"
+      },
+      {
+        "name": "Terraform Module Registry",
+        "comingSoon": true
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "name": "CNSS Certified Network Security Specialist",
+      "issuer": "ICSI",
+      "date": "2024"
+    },
+    {
+      "name": "Cyber Security Awareness Certificate",
+      "issuer": "Fortinet",
+      "date": "2024"
+    },
+    {
+      "name": "Server Administration Competency",
+      "issuer": "BNSP",
+      "date": "2023"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "AGI Hackathon 2024",
+      "result": "2nd Runner Up",
+      "desc": "Led AI pipeline orchestration and security implementation."
+    },
+    {
+      "title": "ICP Hackathon 2024",
+      "result": "Participant",
+      "desc": "Developed DApps and researched Web3 deployment strategies."
+    },
+    {
+      "title": "Data Science Tournament",
+      "result": "3rd Place",
+      "desc": "Engineered robust data pipelines and security protocols."
+    }
+  ]
+}
