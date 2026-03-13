@@ -12,12 +12,12 @@ const HeroSection = () => {
 
     const socialIcon = [
         {
-            href: profileData?.linkedin || "https://linkedin.com/in/ersaazis",
+            href: data?.linkedin || "https://linkedin.com/in/ersaazis",
             icon: "LinkedIn",
             type: "linkedin"
         },
         {
-            href: profileData?.github || "https://github.com/ersaazis",
+            href: data?.github || "https://github.com/ersaazis",
             icon: "GitHub",
             type: "github"
         },
