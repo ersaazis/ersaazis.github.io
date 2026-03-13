@@ -1,40 +1,47 @@
-# Typefolio – One Page Template
-#### Preview
+# Ersa Azis Mansyur – Portfolio
 
- - [Demo](https://themewagon.github.io/typefolio-nextjs/)
+A premium, minimalist portfolio website for a Senior DevSecOps Engineer, built with Next.js and optimized for static hosting on GitHub Pages.
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/typefolio-nextjs/)
+## 🚀 Live Demo
+Visit the live site: [http://ersaazis.github.io/](http://ersaazis.github.io/)
 
-## Getting Started
+## ✨ Features
+- **Modern UI/UX**: minimalist design inspired by the Typefolio template with a premium dark-themed aesthetic.
+- **Optimized for Search**: Clean typography and semantic HTML.
+- **Fast and Lightweight**: Powered by Next.js and served as a static site.
+- **Automated Deployment**: Integrated with GitHub Actions for seamless updates.
+- **Responsive Design**: fully optimized for mobile, tablet, and desktop viewing.
 
-1. Clone Repository
+## 🛠️ Tech Stack
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Components**: [Shadcn/UI](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: [GitHub Pages](https://pages.github.com/) / [GitHub Actions](https://github.com/features/actions)
+
+## 📦 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone git@github.com:ersaazis/ersaazis.github.io.git
+cd ersaazis.github.io
 ```
-git clone https://github.com/themewagon/typefolio-nextjs.git
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run the development server:
 
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-## Author 
+### 4. Build for static export
+```bash
+npm run build
 ```
-Design and code is completely written by Getnextjstemplates and wrappixel team. 
-```
+The output will be generated in the `out` directory.
 
-## License
-
- - Design is Copyright &copy; <a href="https://getnextjstemplates.com/" target="_blank">Getnextjstemplates</a> . Code is Copyright <a href="https://www.wrappixel.com/" target="_blank">@wrappixel</a>
- - Licensed cover under [MIT]
- - Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+## 📄 License
+This project is licensed under the MIT License.
