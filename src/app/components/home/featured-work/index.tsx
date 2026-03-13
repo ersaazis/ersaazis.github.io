@@ -1,3 +1,5 @@
+import Image from "next/image"
+import Link from "next/link"
 import data from "../../../../../data.json";
 
 const FeaturedWork = () => {

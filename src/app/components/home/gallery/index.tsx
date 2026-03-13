@@ -1,3 +1,11 @@
+import Image from "next/image";
+import {
+    Dialog,
+    DialogContent,
+    DialogTrigger,
+    DialogTitle,
+    DialogDescription,
+} from "@/components/ui/dialog";
 import data from "../../../../../data.json";
 
 const Gallery = () => {

@@ -1,24 +1,7 @@
-"use client";
-import Image from "next/image"
-import { useEffect, useState } from "react";
+import data from "../../../../../data.json";
 
 const Experience = () => {
-    const [experienceData, setExperienceData] = useState<any>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data')
-                if (!res.ok) throw new Error('Failed to fetch')
-                const data = await res.json()
-                setExperienceData(data?.experienceData)
-            } catch (error) {
-                console.error('Error fetching services:', error)
-            }
-        }
-
-        fetchData()
-    }, [])
+    const experienceData = data?.experience;
 
     return (
         <section>
