@@ -5,7 +5,18 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const badgeVariants = cva(
-  "font-semibold px-2 py-0.5 border border-primary/5 rounded bg-primary/5 text-primary/70"
+  "font-semibold px-2 py-0.5 border rounded",
+  {
+    variants: {
+      variant: {
+        default: "border-primary/5 bg-primary/5 text-primary/70",
+        outline: "border-current bg-transparent",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
 )
 
 function Badge({
